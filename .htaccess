@@ -1,0 +1,30 @@
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Set Base URL
+  RewriteBase /
+
+  # Remove .html extension from URLs
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+  # Redirect /page.html to /page (301 redirect for SEO)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.html\ HTTP
+  RewriteRule ^([^\.]+)\.html$ /$1 [L,R=301]
+</IfModule>
+
+# Security headers (optional but recommended)
+<IfModule mod_headers.c>
+  Header set X-UA-Compatible "IE=edge"
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
