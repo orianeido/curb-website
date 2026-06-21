@@ -2,11 +2,12 @@
 const navToggle = document.getElementById('navToggle');
 const nav = document.querySelector('.nav');
 
-if (navToggle) {
+if (navToggle && nav) {
   navToggle.addEventListener('click', () => {
     const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-    navToggle.setAttribute('aria-expanded', !isOpen);
-    nav.setAttribute('data-open', !isOpen);
+    const newState = isOpen ? 'false' : 'true';
+    navToggle.setAttribute('aria-expanded', newState);
+    nav.setAttribute('data-open', newState);
   });
 
   // Close menu when a link is clicked
