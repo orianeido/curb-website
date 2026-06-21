@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curb — Scan & Park</title>
-  <meta name="description" content="Curb helps you scan parking signs and understand if you can park instantly." />
+  <title>Curb — Scan Parking Signs Instantly | Download iOS App</title>
+  <meta name="description" content="Scan parking signs to understand if you can park instantly—get clarity on allowed, paid, or restricted spots. Download free on iOS." />
   <meta name="theme-color" content="#1A35E6" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Curb — Scan Parking Signs Instantly" />
@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/leaflet.css"/>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='90' font-size='90' font-weight='bold' fill='%231A35E6'>C</text></svg>">
   <link rel="preload" as="image" href="images/hero-phone.webp"/>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://unpkg.com">
@@ -33,10 +34,7 @@
         "name": "Curb",
         "url": "https://curb-park.app/",
         "email": "support@curb-park.app",
-        "founder": {
-          "@type": "Person",
-          "name": "Ido Oriane"
-        },
+        "founder": { "@id": "https://curb-park.app/#founder" },
         "sameAs": []
       },
       {
@@ -47,28 +45,38 @@
         "operatingSystem": "iOS",
         "description": "Scan parking signs and instantly understand if you can park. Curb turns confusing parking signs into clear answers.",
         "publisher": { "@id": "https://curb-park.app/#organization" },
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "Free",
-            "price": "0",
-            "priceCurrency": "USD"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pro Monthly",
-            "price": "1.99",
-            "priceCurrency": "USD",
-            "billingDuration": "P1M"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pro Annual",
-            "price": "9.99",
-            "priceCurrency": "USD",
-            "billingDuration": "P1Y"
-          }
-        ]
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Free",
+              "price": "0"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pro Monthly",
+              "price": "1.99",
+              "billingDuration": "P1M"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pro Annual",
+              "price": "9.99",
+              "billingDuration": "P1Y"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://curb-park.app/#founder",
+        "name": "Ido Oriane",
+        "url": "https://curb-park.app/",
+        "jobTitle": "Founder & Developer",
+        "organization": { "@id": "https://curb-park.app/#organization" },
+        "description": "Software engineer frustrated by ambiguous parking signs, built Curb to solve parking confusion across multiple countries"
       }
     ]
   }
@@ -112,7 +120,7 @@
 
       <div class="phone-stage reveal" aria-label="Curb app preview">
         <div class="hero-phone-placeholder">
-          <img src="images/hero-phone.webp" alt="Curb app scanning parking sign">
+          <img src="images/hero-phone.webp" alt="Curb app scanning parking sign" width="520" height="927">
         </div>
       </div>
     </section>
@@ -126,32 +134,29 @@
       <div class="steps illustrated-steps">
         <article class="step-card reveal">
           <div class="image-placeholder how-image" aria-hidden="true">
-            <img src="images/how-scan.webp" loading="lazy" alt="">
-            <span>images/how-scan.webp</span>
+            <img src="images/how-scan.webp" loading="lazy" alt="Step 1: Scan parking sign" width="200" height="200">
           </div>
           <div class="step-number">1</div>
-          <h3>Scan</h3>
-          <p>Point your camera at the parking sign.</p>
+          <h3>Scan Parking Sign</h3>
+          <p>Point your camera at the parking sign and let Curb capture it.</p>
         </article>
 
         <article class="step-card reveal">
           <div class="image-placeholder how-image" aria-hidden="true">
-            <img src="images/how-analyze.webp" loading="lazy" alt="">
-            <span>images/how-analyze.webp</span>
+            <img src="images/how-analyze.webp" loading="lazy" alt="Step 2: Analyze parking rules" width="200" height="200">
           </div>
           <div class="step-number">2</div>
-          <h3>Analyze</h3>
-          <p>Curb reads the rules and checks the time.</p>
+          <h3>Analyze Parking Rules</h3>
+          <p>Curb reads the parking rules, checks restrictions, and verifies the time.</p>
         </article>
 
         <article class="step-card reveal">
           <div class="image-placeholder how-image" aria-hidden="true">
-            <img src="images/how-park.webp" loading="lazy" alt="">
-            <span>images/how-park.webp</span>
+            <img src="images/how-park.webp" loading="lazy" alt="Step 3: Park with confidence" width="200" height="200">
           </div>
           <div class="step-number">3</div>
-          <h3>Park</h3>
-          <p>Get a clear answer before leaving your car.</p>
+          <h3>Park with Confidence</h3>
+          <p>Get a clear answer—allowed, paid, or restricted—before leaving your car.</p>
         </article>
       </div>
     </section>
@@ -278,7 +283,7 @@
         </div>
         <div class="about-copy">
           <p>Parking signs can be confusing when you are in a new city, in a rush, or trying to understand time limits. Curb is being built to turn complicated signs into simple, confident parking decisions.</p>
-          <p class="creator">Designed and built by <strong>Ido Oriane</strong>.</p>
+          <p class="creator">Built by <strong>Ido Oriane</strong>, a software engineer frustrated by ambiguous parking signs. After spending hours decoding municipal regulations across multiple countries, I realized drivers needed a better way. Curb turns photo recognition and local parking rules into instant clarity.</p>
         </div>
       </div>
     </section>
