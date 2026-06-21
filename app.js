@@ -1,3 +1,23 @@
+// Mobile hamburger menu
+const navToggle = document.getElementById('navToggle');
+const nav = document.querySelector('.nav');
+
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', !isOpen);
+    nav.setAttribute('data-open', !isOpen);
+  });
+
+  // Close menu when a link is clicked
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle.setAttribute('aria-expanded', 'false');
+      nav.setAttribute('data-open', 'false');
+    });
+  });
+}
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
