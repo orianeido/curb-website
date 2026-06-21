@@ -1,0 +1,32 @@
+# Curb — Scan & Park
+
+> Curb helps drivers scan parking signs and get instant clarity on parking rules. Free iOS app with paid upgrade options for unlimited scans.
+
+## Key Pages
+
+- [Homepage](https://curb-park.app/): Parking sign scanner app with instant rule interpretation
+- [Blog - Parking Mistakes](https://curb-park.app/blog/article-parking-mistakes.html): Guide to avoiding common parking ticket mistakes
+- [Blog - Israel Parking Guide](https://curb-park.app/blog/parking-guide-israel.html): Complete guide to parking rules and curb colors in Israel
+- [Blog Index](https://curb-park.app/blog/): Parking guides, news, and tips for drivers
+
+## About Curb
+
+Curb is a mobile app built by Ido Oriane, a software engineer frustrated by ambiguous parking signs. After spending years decoding parking regulations across multiple countries, Ido created Curb to turn confusing signs into instant clarity.
+
+## Key Features
+
+- **Scan Parking Signs**: Point your camera at any parking sign and Curb captures it instantly
+- **Analyze Parking Rules**: Curb reads the parking rules, checks restrictions, and verifies the time to give you accurate, time-specific decisions
+- **Get Clear Answers**: Receive one of three outcomes: Allowed (park with confidence), Paid (find payment option), or Restricted (find another spot)
+- **Time-Aware Decisions**: Understanding that parking regulations vary by time of day, day of week, and season
+- **Vehicle Profile**: Track which vehicles you drive for accurate permit and restriction information
+
+## Pricing
+
+Curb offers a freemium model for drivers of all parking frequencies. The Free plan includes 5 scans per month at no cost, ideal for occasional parkers. Curb Pro offers unlimited scans through two options: $1.99 per month or $9.99 per year (save 58%). No subscription lock-in—cancel anytime.
+
+## Contact
+
+- Support: support@curb-park.app
+- Website: https://curb-park.app/
+- iOS App Store: https://curb-park.app/
