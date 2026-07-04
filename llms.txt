@@ -5,9 +5,17 @@
 ## Key Pages
 
 - [Homepage](https://curb-park.app/): Parking sign scanner app with instant rule interpretation
-- [Blog - Parking Mistakes](https://curb-park.app/blog/article-parking-mistakes.html): Guide to avoiding common parking ticket mistakes
-- [Blog - Israel Parking Guide](https://curb-park.app/blog/parking-guide-israel.html): Complete guide to parking rules and curb colors in Israel
 - [Blog Index](https://curb-park.app/blog/): Parking guides, news, and tips for drivers
+- [Blog - Launch Announcement](https://curb-park.app/blog/announcement-curb-launch.html): Curb launches worldwide in 11 countries
+- [Blog - 5 Parking Mistakes](https://curb-park.app/blog/article-parking-mistakes.html): Guide to avoiding common parking ticket mistakes
+- [Blog - France Parking Guide](https://curb-park.app/blog/parking-guide-france.html): Complete guide to parking rules, signs, and fines in France
+- [Blog - Germany Parking Guide](https://curb-park.app/blog/parking-guide-germany.html): Complete guide to parking rules, signs, and fines in Germany
+- [Blog - Hungary Parking Guide](https://curb-park.app/blog/parking-guide-hungary.html): Complete guide to parking rules, signs, and fines in Hungary
+- [Blog - Italy Parking Guide](https://curb-park.app/blog/parking-guide-italy.html): Complete guide to parking rules, signs, and fines in Italy
+- [Blog - Israel Parking Guide](https://curb-park.app/blog/parking-guide-israel.html): Complete guide to parking rules and curb colors in Israel
+- [Blog - Netherlands Parking Guide](https://curb-park.app/blog/parking-guide-netherlands.html): Complete guide to parking rules, signs, and fines in the Netherlands
+- [Blog - Spain Parking Guide](https://curb-park.app/blog/parking-guide-spain.html): Complete guide to parking rules, signs, and fines in Spain
+- [Blog - UK Parking Guide](https://curb-park.app/blog/parking-guide-uk.html): Complete guide to parking rules, signs, and fines in the UK
 
 ## About Curb
 

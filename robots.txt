@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /blog/parking-guide-israel.html
+Disallow: /downloads/
 
 Sitemap: https://curb-park.app/sitemap.xml

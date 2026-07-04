@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="css/leaflet.css"/>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
   <link rel="preload" as="image" href="images/hero-phone.webp"/>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://unpkg.com">
@@ -34,7 +36,11 @@
         "url": "https://curb-park.app/",
         "email": "support@curb-park.app",
         "founder": { "@id": "https://curb-park.app/#founder" },
-        "sameAs": []
+        "sameAs": [
+          "https://www.instagram.com/curb.park",
+          "https://www.facebook.com/share/1VPArrEc4j/?mibextid=wwXIfr",
+          "https://x.com/curb_park"
+        ]
       },
       {
         "@type": "SoftwareApplication",
@@ -74,8 +80,48 @@
         "name": "Ido Oriane",
         "url": "https://curb-park.app/",
         "jobTitle": "Founder & Developer",
-        "organization": { "@id": "https://curb-park.app/#organization" },
+        "worksFor": { "@id": "https://curb-park.app/#organization" },
         "description": "Software engineer frustrated by ambiguous parking signs, built Curb to solve parking confusion across multiple countries"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Curb replace local parking rules?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Curb is designed to help explain parking signs clearly, but drivers should always follow posted signs and local regulations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Curb upload my scan photos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Scan photos are stored locally on your device and are not uploaded to Curb servers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does Curb need my location?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Location is used only when you perform a scan, so Curb can understand which local parking rules may apply."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why add a vehicle profile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some parking rules depend on vehicle type, resident permits, or disabled permits. A profile helps make the result more relevant."
+        }
       }
     ]
   }
@@ -168,7 +214,7 @@
       <div class="feature-grid illustrated-features refined-features">
         <article class="feature-card reveal">
           <div class="image-placeholder feature-image" aria-hidden="true">
-            <img src="images/feature-result-states.webp" loading="lazy" alt="">
+            <img src="images/feature-result-states.webp" loading="lazy" alt="Clear result states showing allowed, not allowed, and conditional parking options">
             <span>images/feature-result-states.webp</span>
           </div>
           <h3>Clear result states</h3>
@@ -176,7 +222,7 @@
         </article>
         <article class="feature-card reveal">
           <div class="image-placeholder feature-image" aria-hidden="true">
-            <img src="images/feature-time-aware.webp" loading="lazy" alt="">
+            <img src="images/feature-time-aware.webp" loading="lazy" alt="Time-aware parking decisions showing hourly and weekday restrictions">
             <span>images/feature-time-aware.webp</span>
           </div>
           <h3>Time aware</h3>
@@ -184,7 +230,7 @@
         </article>
         <article class="feature-card reveal">
           <div class="image-placeholder feature-image" aria-hidden="true">
-            <img src="images/feature-vehicle-profile.webp" loading="lazy" alt="">
+            <img src="images/feature-vehicle-profile.webp" loading="lazy" alt="Vehicle profile feature allowing users to add car details for improved results">
             <span>images/feature-vehicle-profile.webp</span>
           </div>
           <h3>Vehicle profile</h3>
@@ -192,7 +238,7 @@
         </article>
         <article class="feature-card reveal">
           <div class="image-placeholder feature-image" aria-hidden="true">
-            <img src="images/feature-travel.webp" loading="lazy" alt="">
+            <img src="images/feature-travel.webp" loading="lazy" alt="Travel feature providing parking assistance for unfamiliar cities">
             <span>images/feature-travel.webp</span>
           </div>
           <h3>Made for travel</h3>
@@ -282,7 +328,7 @@
         </div>
         <div class="about-copy">
           <p>Parking signs can be confusing when you are in a new city, in a rush, or trying to understand time limits. Curb is being built to turn complicated signs into simple, confident parking decisions.</p>
-          <p class="creator">Built by <strong>Ido Oriane</strong>, a software engineer frustrated by ambiguous parking signs. After spending hours decoding municipal regulations across multiple countries, I realized drivers needed a better way. Curb turns photo recognition and local parking rules into instant clarity.</p>
+          <p class="creator">Built by <strong>Ido Oriane</strong>, a software engineer frustrated by ambiguous parking signs. After spending years decoding municipal regulations across multiple countries, I realized drivers needed a better way. Curb turns photo recognition and local parking rules into instant clarity. Connect with Ido on <a href="https://www.linkedin.com/in/idooriane" target="_blank" rel="noopener">LinkedIn</a> or <a href="https://github.com/idooriane" target="_blank" rel="noopener">GitHub</a>.</p>
         </div>
       </div>
     </section>
@@ -297,14 +343,14 @@
       <div class="blog-grid">
         <a class="blog-card reveal" href="blog/announcement-curb-launch.html">
           <div class="image-placeholder blog-card-image" aria-hidden="true">
-            <img src="images/blog/announcement-curb-launch-hero.svg" loading="lazy" alt="Curb app launch announcement">
+            <img src="images/blog/curb-parking-launch-hero.webp" loading="lazy" alt="Curb app launch announcement">
           </div>
           <div class="blog-card-body">
             <span class="post-tag tag-announcement">Announcement</span>
-            <h3>Curb Is Opening Its Waitlist — Here's What to Expect</h3>
+            <h3>Curb Parking App Launches Worldwide: Download Now in 11 Countries</h3>
             <p>We're getting ready to launch Curb's scan-and-park experience. Here's what's coming, and how to get early access.</p>
             <div class="blog-card-meta">
-              <time datetime="2026-05-20">May 20, 2026</time>
+              <time datetime="2026-07-07">July 7, 2026</time>
               <span>·</span>
               <span>3 min read</span>
             </div>
@@ -314,16 +360,50 @@
 
         <a class="blog-card reveal" href="blog/article-parking-mistakes.html">
           <div class="image-placeholder blog-card-image" aria-hidden="true">
-            <img src="images/blog/article-parking-mistakes-hero.svg" loading="lazy" alt="5 parking mistakes to avoid">
+            <img src="images/blog/parking-mistake-article-hero.webp" loading="lazy" alt="5 parking mistakes to avoid">
           </div>
           <div class="blog-card-body">
             <span class="post-tag tag-article">Article</span>
             <h3>5 Parking Mistakes That Lead to Tickets (And How to Avoid Them)</h3>
             <p>From misreading street-cleaning signs to ignoring permit zones — the most common parking mistakes and how to avoid them.</p>
             <div class="blog-card-meta">
-              <time datetime="2026-06-19">June 19, 2026</time>
+              <time datetime="2026-07-05">July 5, 2026</time>
               <span>·</span>
               <span>8 min read</span>
+            </div>
+            <span class="blog-card-link">Read more</span>
+          </div>
+        </a>
+
+        <a class="blog-card reveal" href="blog/parking-guide-france.html">
+          <div class="image-placeholder blog-card-image" aria-hidden="true">
+            <img src="images/blog/parking-guide-france-hero.webp" loading="lazy" alt="France parking guide - blue lines and parking zones">
+          </div>
+          <div class="blog-card-body">
+            <span class="post-tag tag-guide">Parking Guide</span>
+            <h3>The Complete France Parking Guide: Rules, Signs & Fines</h3>
+            <p>Master France parking signs, curbs, and zones. Learn blue line parking, disc zones, no parking rules, fines, and avoid costly mistakes.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-07-01">July 1, 2026</time>
+              <span>·</span>
+              <span>12 min read</span>
+            </div>
+            <span class="blog-card-link">Read more</span>
+          </div>
+        </a>
+
+        <a class="blog-card reveal" href="blog/parking-guide-italy.html">
+          <div class="image-placeholder blog-card-image" aria-hidden="true">
+            <img src="images/blog/parking-guide-italy-hero.webp" loading="lazy" alt="Italy parking guide - curb lines and parking zones">
+          </div>
+          <div class="blog-card-body">
+            <span class="post-tag tag-guide">Parking Guide</span>
+            <h3>The Complete Italy Parking Guide: Rules, Signs & Fines</h3>
+            <p>Master Italy parking signs, curb lines, and zones. Learn blue line paid parking, white line free parking, no parking rules, fines, and avoid costly mistakes.</p>
+            <div class="blog-card-meta">
+              <time datetime="2026-07-01">July 1, 2026</time>
+              <span>·</span>
+              <span>12 min read</span>
             </div>
             <span class="blog-card-link">Read more</span>
           </div>
@@ -386,6 +466,7 @@
       <a href="#faq">FAQ</a>
       <a href="blog/index.html">Blog</a>
       <a href="privacy.html">Privacy Policy</a>
+      <a href="tos.html">Terms of Service</a>
       <a href="mailto:support@curb-park.app">Contact</a>
     </nav>
 
