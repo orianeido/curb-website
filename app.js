@@ -217,7 +217,7 @@ async function initCoverageMap() {
     // Use a GeoJSON source instead of world-atlas TopoJSON.
     // The previous TopoJSON source produced long antimeridian seam lines across Russia
     // in Leaflet. This dataset avoids those visual artifacts.
-    const response = await fetch('https://cdn.jsdelivr.net/gh/johan/world.geo.json@master/countries.geo.json');
+    const response = await fetch('/data/world-countries.geojson');
     if (!response.ok) throw new Error('World map data failed to load');
     const countries = await response.json();
 
