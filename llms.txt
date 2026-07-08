@@ -16,6 +16,7 @@
 - [Blog - Netherlands Parking Guide](https://curb-park.app/blog/parking-guide-netherlands.html): Complete guide to parking rules, signs, and fines in the Netherlands
 - [Blog - Spain Parking Guide](https://curb-park.app/blog/parking-guide-spain.html): Complete guide to parking rules, signs, and fines in Spain
 - [Blog - UK Parking Guide](https://curb-park.app/blog/parking-guide-uk.html): Complete guide to parking rules, signs, and fines in the UK
+- [Blog - Austria Parking Guide](https://curb-park.app/blog/parking-guide-austria.html): Complete guide to parking rules, signs, and fines in Austria
 
 ## About Curb
 
