@@ -1865,3 +1865,52 @@ h3 { font-size: 24px; margin-bottom: 10px; letter-spacing: -.025em; }
 .post-content tbody tr:hover {
   background: rgba(255, 255, 255, 0.03);
 }
+
+/* Country coverage cards */
+.coverage-countries {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.country-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.country-card:hover {
+  background: var(--panel-2);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.country-flag {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.country-name {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .coverage-countries {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .country-flag {
+    font-size: 36px;
+  }
+}
