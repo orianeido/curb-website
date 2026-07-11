@@ -1874,26 +1874,6 @@ h3 { font-size: 24px; margin-bottom: 10px; letter-spacing: -.025em; }
   margin: 48px 0;
 }
 
-.coverage-countries > :nth-child(7) {
-  grid-column: 2 / span 1;
-}
-
-.coverage-countries > :nth-child(8) {
-  grid-column: 3 / span 1;
-}
-
-.coverage-countries > :nth-child(9) {
-  grid-column: 4 / span 1;
-}
-
-.coverage-countries > :nth-child(10) {
-  grid-column: 5 / span 1;
-}
-
-.coverage-countries > :nth-child(11) {
-  grid-column: 6 / span 1;
-}
-
 .country-card {
   display: flex;
   flex-direction: column;
